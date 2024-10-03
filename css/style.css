@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", system-ui;
+}
+
+:root {
+  --primary_color: #2d98da;
+  --secondery_color: #45aaf2;
+  --helping_color: #fff;
+  --checked_color: #fa8231;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: #0093e9;
+  background: linear-gradient(to right, #200122, #6f0000);
+  overflow: auto;
+}
+.container {
+  width: 100%;
+  max-width: 800px;
+  height: 500px;
+  /* background-color: var(--helping_color); */
+  border-radius: 6px;
+  display: flex;
+  gap: 30px;
+
+  .common {
+    flex: 1;
+    border: 4px dotted var(--helping_color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    .left_inner {
+      width: 100%;
+      background-color: var(--helping_color);
+      padding: 16px;
+      border-radius: 4px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      font-size: 22px;
+      cursor: grab;
+    }
+  }
+
+  .left_wrapper {
+  }
+
+  .right_wrapper {
+  }
+}
